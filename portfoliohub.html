@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Faizan's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: #fff;
+    }
+
+    header {
+      background: linear-gradient(90deg, #00f0ff, #6f00ff);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px #00f0ff;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #fff;
+      text-shadow: 0 0 10px #fff;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00f0ff;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #00f0ff;
+      text-shadow: 0 0 5px #00f0ff;
+    }
+
+    .skills, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .skill-box, .project {
+      flex: 1 1 250px;
+      background: #1c1c1c;
+      border: 2px solid #00f0ff;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 15px #00f0ff55;
+      transition: 0.3s;
+    }
+
+    .skill-box:hover, .project:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #00f0ff;
+    }
+
+    .project-icon {
+      width: 80px;
+      height: 80px;
+      margin: 10px auto;
+      border-radius: 50%;
+      background: linear-gradient(45deg, #00f0ff, #6f00ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      color: #fff;
+      box-shadow: 0 0 10px #6f00ff;
+      animation: rotateIcon 4s linear infinite;
+    }
+
+    @keyframes rotateIcon {
+      0% { transform: rotate(0); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .qualification {
+      background: #1a1a1a;
+      border-left: 4px solid #00f0ff;
+      padding: 15px;
+      margin: 20px 0;
+      box-shadow: 0 0 10px #00f0ff55;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #ccc;
+      background: #111;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Faizan's Portfolio</h1>
+  <nav>
+    <a href="#skills">Skills</a>
+    <a href="#qualification">Qualification</a>
+    <a href="#projects">Projects</a>
+  </nav>
+</header>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill-box">🎨 Graphics Designer</div>
+    <div class="skill-box">💻 Website Developer</div>
+    <div class="skill-box">📊 Accountist</div>
+  </div>
+</section>
+
+<section id="qualification">
+  <h2>Qualification</h2>
+  <div class="qualification">
+    <strong>Matric:</strong> Passed with strong concepts in Computer, Accounting, and Design.
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project">
+      <div class="project-icon">🎨</div>
+      <h3>Logo Design Pack</h3>
+      <p>Creative logos made for brands using Adobe Illustrator.</p>
+    </div>
+    <div class="project">
+      <div class="project-icon">💻</div>
+      <h3>Personal Website</h3>
+      <p>Responsive HTML/CSS portfolio showcasing skills and projects.</p>
+    </div>
+    <div class="project">
+      <div class="project-icon">📊</div>
+      <h3>Excel Ledger Sheet</h3>
+      <p>Designed accounting sheet for local business record keeping.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Faizan. All rights reserved.
+</footer>
+
+</body>
+</html>
